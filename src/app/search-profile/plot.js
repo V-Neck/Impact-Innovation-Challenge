@@ -3,7 +3,7 @@ var margin = {top: 20, right: 20, bottom: 30, left: 40},
     height = 500 - margin.top - margin.bottom;
 
 let x = "Date";
-let y = "Narcan_administrations";
+let y = "Narcan administrations";
 /* 
  * value accessor - returns the value to encode for a given data object.
  * scale - maps value to a visual display encoding, such as a pixel position.

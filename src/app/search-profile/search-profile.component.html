@@ -1,3 +1,34 @@
-<p>
-  search-profile works!
-</p>
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<!-- Example based on http://bl.ocks.org/mbostock/3887118 -->
+<!-- Tooltip example from http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html -->
+<!-- Coding style based on http://gist.github.com/mbostock/5977197 -->
+<head>
+	<link rel="stylesheet" href="search-profile.component.css">
+</head>
+<body>
+	<!-- <div class="plottable"> -->
+		<!-- <div class="labtable"> -->
+		<div class="searchy">
+			<label for="subject">Topic</label>
+      		<select [(ngModel)]="userData.searchTopic"  class="form-control" name="subject">
+		        <option value="1"> Count checked in to shelter</option>
+		        <option value="2"> Food pantry visitors</option>
+		        <option value="3"> Amount food distributed</option>
+		        <option value="4"> Narcan Injections</option>
+		        <option value="5"> Police reports</option>
+		        <option value="6"> Medical reports</option>
+	      	</select>
+
+			<script src="https://d3js.org/d3.v3.min.js"></script>
+			<script src="table.js"></script>
+		</div>
+		
+		<div class="plot">
+			<script src="plot.js"></script>
+		</div>
+	<!-- </div> -->
+</body>
+</html>
